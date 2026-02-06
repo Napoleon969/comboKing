@@ -1,0 +1,58 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>comboKing</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap">
+    
+
+
+</head>
+<body>
+    <div id="overlay"></div>
+        
+    <audio id="bell" src="audios/bell.MP3"></audio>
+    <div class="main">
+            <div class="titles select-level">
+                <div id="toggle-btn" ><span>select Level</span>
+                    <span><i class="fa-solid fa-bars"></i></span>
+                </div>
+        
+
+            </div>
+            <div class="level-buttons-div">
+                <button id="beginner" class="level">Beginner</button>
+                <button id="learner" class="level">Learner</button>
+                <button id="intermediate" class="level">Intermediate</button>
+                <button id="advanced" class="level">Advanced</button>
+            </div>
+
+            <div class=" titles timer-title">
+                <div class="timer-inputs-div">
+                    <span>set</span><span>Timer</span>
+                </div>
+                <div class="timer-inputs-div">
+                    <input type="number" id="hours" min="0" placeholder="HH">
+                    <input type="number" id="minutes" min="0" placeholder="MM">
+                    <input type="number" id="seconds" min="0" placeholder="SS">
+                </div>
+            </div>
+
+
+            <div class="timer-case">
+                <div id="display">00 : 00 : 00</div>
+            </div>
+
+
+
+            <div class="start-stop-buttons">
+                <button class="control-buttons" id="start">Start</button>
+                <button class="control-buttons" id="stop">Stop</button>
+            </div>
+
+    </div>
+    <script type="module" src="script.js"></script>
+</body>
+</html>
