@@ -103,7 +103,7 @@ function pickRandomCombo() {
 
   utterance.onend = () => {
 
-    comboTimeout = setTimeout(pickRandomCombo, 1000);
+    comboTimeout = setTimeout(pickRandomCombo, 2000);
   };
 
   // Stop any queued speech
